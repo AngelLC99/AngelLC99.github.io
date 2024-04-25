@@ -1,0 +1,102 @@
+/*Cosas normales*/
+h1{
+    color: white;
+    text-align: center;
+    background: linear-gradient(yellow, black);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h2{
+    color: white;
+    text-decoration: solid;
+}
+h3{
+    color: white;
+    font-size: 25px;
+}
+hr{
+    border-color: white;
+    border-width: 3px;
+}
+.anyway{
+    text-align: center;
+}
+img{
+    filter: drop-shadow(2px 5px 40px red);
+}
+
+/*Empieza código de las secciones*/
+ul{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+.link{
+    text-decoration: none;
+    color:  white;
+    font-size: 20px;
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+.link::before,
+.link::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: white;
+    transform: scaleX(0);
+    transition: all 0.6s ease;
+    box-shadow: 0px 0px 5px blue,
+                0px 0px 30px blue,
+                0px 0px 90px blue;
+}
+
+.link::before{
+    top: 0;
+    left: 0;
+    transform-origin: left;
+}
+
+.link::after{
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+}
+
+.link:hover::before,
+.link:hover::after{
+    transform: scaleX(1);
+}
+
+/*cosas normales*/
+body{
+    background-color: #000;
+}
+h1{
+    text-align: center;
+    color: white;
+    background: linear-gradient(orange, black);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h3{
+    color: white;
+    text-align: justify;
+}
+h2{
+    color: white;
+}
+li{
+    color: white;
+    font-family: monospace;
+    font-size: 12pt;
+}
+.texto3{
+    text-align: center;
+}

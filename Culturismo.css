@@ -1,0 +1,82 @@
+/*Empieza código de las secciones*/
+ul{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+.link{
+    text-decoration: none;
+    color:  white;
+    font-size: 20px;
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+.link::before,
+.link::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: white;
+    transform: scaleX(0);
+    transition: all 0.6s ease;
+    box-shadow: 0px 0px 5px blue,
+                0px 0px 30px blue,
+                0px 0px 90px blue;
+}
+
+.link::before{
+    top: 0;
+    left: 0;
+    transform-origin: left;
+}
+
+.link::after{
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+}
+
+.link:hover::before,
+.link:hover::after{
+    transform: scaleX(1);
+}
+
+/*cosas normales*/
+body{
+    background-color: black;
+}
+h1{
+    text-align: center;
+    color: white;
+    background: linear-gradient(blue, black);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h3{
+    color: white;
+    text-align: justify;
+}
+h2{
+    color: white;
+}
+li{
+    color: white;
+    font-family: monospace;
+    font-size: 12pt;
+}
+
+/*Poner en medio las imagenes en una sola línea*/
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.image-item {
+    flex: 1;
+    text-align: center;
+}
