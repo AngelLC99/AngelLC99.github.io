@@ -1,0 +1,4 @@
+-keep class com.srclamatos.ventas.data.entity.** { *; }
+-keep class com.srclamatos.ventas.data.dao.** { *; }
+-keepattributes *Annotation*
+-dontwarn org.sqlite.**

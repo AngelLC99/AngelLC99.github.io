@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sr. Clamatos</string>
+    <string name="titulo_registrar_venta">Registrar venta</string>
+    <string name="titulo_editar_venta">Modificar venta</string>
+    <string name="titulo_agregar_bebidas">Agregar bebidas</string>
+    <string name="sin_ventas">No hay ventas registradas hoy.\nPresiona + para registrar una nueva venta.</string>
+    <string name="sin_bebidas_catalogo">No hay bebidas en el catálogo.</string>
+    <string name="nav_dashboard">Inicio</string>
+    <string name="nav_ventas">Ventas</string>
+    <string name="nav_catalogo">Catálogo</string>
+    <string name="nav_reportes">Reportes</string>
+</resources>

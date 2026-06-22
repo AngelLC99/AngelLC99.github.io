@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_dashboard">
+
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="com.srclamatos.ventas.ui.dashboard.DashboardFragment"
+        android:label="@string/nav_dashboard" />
+
+    <fragment
+        android:id="@+id/nav_ventas"
+        android:name="com.srclamatos.ventas.ui.ventas.VentasFragment"
+        android:label="@string/nav_ventas" />
+
+    <fragment
+        android:id="@+id/nav_catalogo"
+        android:name="com.srclamatos.ventas.ui.catalogo.CatalogoFragment"
+        android:label="@string/nav_catalogo" />
+
+    <fragment
+        android:id="@+id/nav_reportes"
+        android:name="com.srclamatos.ventas.ui.reportes.ReportesFragment"
+        android:label="@string/nav_reportes" />
+
+</navigation>
